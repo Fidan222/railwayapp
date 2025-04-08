@@ -8,7 +8,7 @@ from influxdb_client import InfluxDBClient, Point, WritePrecision
 from influxdb_client.client.write_api import SYNCHRONOUS
 
 # Read configuration from environment variables
-INFLUX_TOKEN = os.environ.get("INFLUX_TOKEN", "FUX4nm4dQ5xdWnKBF6WdPFCbw7akHHVr6CLjHJdv3I_MjCOLbPw86CUk15fyP_TwJr2fJSsvcMBfs9eR3RQLcg")
+INFLUX_TOKEN = os.environ.get("INFLUX_TOKEN", "FUX4nm4dQ5xdWnKBF6WdPFCbw7akHHVr6CLjHJdv3I_MjCOLbPw86CUk15fyP_TwJr2fJSsvcMBfs9eR3RQLcg==")
 INFLUX_URL = os.environ.get("INFLUX_URL", "https://us-east-1-1.aws.cloud2.influxdata.com")
 INFLUX_ORG = os.environ.get("INFLUX_ORG", "interview_grader")
 INFLUX_BUCKET = os.environ.get("INFLUX_BUCKET", "newbucket")
