@@ -69,7 +69,7 @@ def convert_and_upload():
                 is_dangerous = 1 if str(row["Is Dangerous"]).strip().upper() == "TRUE" else 0
 
                 # Read emotion field from CSV row
-                emotion = str(row["Emotion"]).strip()
+                emotion = str(row["Dominant Emotion"]).strip()
 
                 # Create an InfluxDB point. "interview" is the measurement.
                 point = (
